@@ -12,6 +12,8 @@
         break;
       case "chrome:editframe:updateend":
         this.updateEnd();
+        // Sitecore.Support.226950
+        Sitecore.PageModes.ChromeManager.select(this.chrome);
         break;
     }
   },
